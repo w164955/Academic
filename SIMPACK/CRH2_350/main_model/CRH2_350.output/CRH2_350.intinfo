@@ -1,0 +1,128 @@
+ # Time Integration Statistics used by Simpack ModelExpert
+           1  # ModelExpertVersion
+           8  # N-Values for IntegratorSettings
+         119  # nx
+           0  # nlages
+           3  # n_add_eq
+           0  # n_roots
+   20.00000      # tend
+           1  # integration method
+  9.9999997E-05  #   atolg(1)
+  9.9999997E-05  #   rtolg(1)
+         100  #   nipmax
+  -1.000000      #   vipar
+  0.1000000      #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+   5.000000      #   vipar
+   5.000000      #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+  1.0000000E-07  #   vipar
+   1.000000      #   vipar
+   2.000000      #   vipar
+   2.000000      #   vipar
+   2.000000      #   vipar
+   7.000000      #   vipar
+   3.000000      #   vipar
+   3.000000      #   vipar
+   2.000000      #   vipar
+  0.0000000E+00  #   vipar
+   3.000000      #   vipar
+  0.3330000      #   vipar
+  -1.000000      #   vipar
+   1.000000      #   vipar
+   2.000000      #   vipar
+  1.0000000E-06  #   vipar
+  0.0000000E+00  #   vipar
+   2.000000      #   vipar
+  0.0000000E+00  #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+  1.0000000E-03  #   vipar
+   3.000000      #   vipar
+  0.5000000      #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+   1.000000      #   vipar
+   1.000000      #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  0.0000000E+00  #   vipar
+  
+          14  # N-Values for IntegrationOutputInfos
+       64008  #   nrhs_total
+       35403  #   nrhs_nojac
+         508  #   n jacobi
+        1754  #   n mass
+       22490  #   n steps
+           0  #   n roots
+         866  #   n error test failors
+          33  #   n convergence test failors
+         866  #   n steps_rejected
+  1.8130587E-03  #   last step size
+           2  #   last order
+           0  #   rhs_error_flag
+           0  #   integrator_error_flag
+   20.00000      #   tout required

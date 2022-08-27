@@ -1,0 +1,865 @@
+*********************************************************
+License Requirements for Model:
+ CRH2_350
+*********************************************************
+solver:
+ - CRH2_350
+
+autoplus_slv, wheelrail_slv:
+ - $M_Rail_Track_Frame_of_wheelset4
+ - $M_Rail_Track_Camera_of_wheelset4
+ - $M_Rail_Track_Frame_of_wheelset3
+ - $M_Rail_Track_Camera_of_wheelset3
+ - $M_Rail_Track_Frame_of_wheelset2
+ - $M_Rail_Track_Camera_of_wheelset2
+ - $M_Rail_Track_Camera_of_wheelset1
+ - $M_Rail_Track_Frame_of_wheelset1
+ - $M_Isys_TrackFrame_RWP_WR1
+ - $M_Isys_TrackFrame_RWP_WL1
+ - $M_Isys_TrackFrame_RWP_WR2
+ - $M_Isys_TrackFrame_RWP_WL2
+ - $M_Isys_TrackFrame_RWP_WR3
+ - $M_Isys_TrackFrame_RWP_WL3
+ - $M_Isys_TrackFrame_RWP_WR3_Copy_1
+ - $M_Isys_TrackFrame_RWP_WL4
+ - $M_Isys_load_Fu
+
+control_slv, autoplus_slv, wheelrail_slv:
+ - $C_accelerometer
+
+wheelrail_slv:
+ - $M_B_Isys_ProfRef_RWP_WR1
+ - $M_B_Isys_ProfRef_RWP_WL1
+ - $M_B_Isys_ProfRef_RWP_WR2
+ - $M_B_Isys_ProfRef_RWP_WL2
+ - $M_B_Isys_ProfRef_RWP_WR3
+ - $M_B_Isys_ProfRef_RWP_WL3
+ - $M_B_Isys_ProfRef_RWP_WR3_Copy_1
+ - $M_B_Isys_ProfRef_RWP_WL4
+ - $M_B_wheelset4_ProfRef_RWP_WR3_Copy_1
+ - $M_B_wheelset4_ProfRef_RWP_WL4
+ - $M_B_wheelset3_ProfRef_RWP_WR3
+ - $M_B_wheelset3_ProfRef_RWP_WL3
+ - $M_B_wheelset2_ProfRef_RWP_WR2
+ - $M_B_wheelset2_ProfRef_RWP_WL2
+ - $M_B_wheelset1_ProfRef_RWP_WR1
+ - $M_B_wheelset1_ProfRef_RWP_WL1
+ - $J_wheelset4
+ - $J_wheelset3
+ - $J_Bogie2
+ - $J_wheelset2
+ - $J_Bogie
+ - $J_wheelset1
+ - $J_Carbody
+ - $F_RWContact_RWP_WR1
+ - $F_RWContact_RWP_WL1
+ - $F_RWContact_RWP_WR2
+ - $F_RWContact_RWP_WL2
+ - $F_RWContact_RWP_WR3
+ - $F_RWContact_RWP_WL3
+ - $F_RWContact_RWP_WR3_Copy_1
+ - $F_RWContact_RWP_WL4
+ - $RS_RWP_WR1_Pair
+ - $RS_RWP_WR1_1
+ - $RS_RWP_WR1_2
+ - $RS_RWP_WR1_3
+ - $RS_RWP_WR1_4
+ - $RS_RWP_WR1_5
+ - $RS_RWP_WR1_1_Adv
+ - $RS_RWP_WR1_2_Adv
+ - $RS_RWP_WR1_3_Adv
+ - $RS_RWP_WR1_4_Adv
+ - $RS_RWP_WR1_5_Adv
+ - $RS_RWP_WL1_Pair
+ - $RS_RWP_WL1_1
+ - $RS_RWP_WL1_2
+ - $RS_RWP_WL1_3
+ - $RS_RWP_WL1_4
+ - $RS_RWP_WL1_5
+ - $RS_RWP_WL1_1_Adv
+ - $RS_RWP_WL1_2_Adv
+ - $RS_RWP_WL1_3_Adv
+ - $RS_RWP_WL1_4_Adv
+ - $RS_RWP_WL1_5_Adv
+ - $RS_RWP_WR2_Pair
+ - $RS_RWP_WR2_1
+ - $RS_RWP_WR2_2
+ - $RS_RWP_WR2_3
+ - $RS_RWP_WR2_4
+ - $RS_RWP_WR2_5
+ - $RS_RWP_WR2_1_Adv
+ - $RS_RWP_WR2_2_Adv
+ - $RS_RWP_WR2_3_Adv
+ - $RS_RWP_WR2_4_Adv
+ - $RS_RWP_WR2_5_Adv
+ - $RS_RWP_WL2_Pair
+ - $RS_RWP_WL2_1
+ - $RS_RWP_WL2_2
+ - $RS_RWP_WL2_3
+ - $RS_RWP_WL2_4
+ - $RS_RWP_WL2_5
+ - $RS_RWP_WL2_1_Adv
+ - $RS_RWP_WL2_2_Adv
+ - $RS_RWP_WL2_3_Adv
+ - $RS_RWP_WL2_4_Adv
+ - $RS_RWP_WL2_5_Adv
+ - $RS_RWP_WR3_Pair
+ - $RS_RWP_WR3_1
+ - $RS_RWP_WR3_2
+ - $RS_RWP_WR3_3
+ - $RS_RWP_WR3_4
+ - $RS_RWP_WR3_5
+ - $RS_RWP_WR3_1_Adv
+ - $RS_RWP_WR3_2_Adv
+ - $RS_RWP_WR3_3_Adv
+ - $RS_RWP_WR3_4_Adv
+ - $RS_RWP_WR3_5_Adv
+ - $RS_RWP_WL3_Pair
+ - $RS_RWP_WL3_1
+ - $RS_RWP_WL3_2
+ - $RS_RWP_WL3_3
+ - $RS_RWP_WL3_4
+ - $RS_RWP_WL3_5
+ - $RS_RWP_WL3_1_Adv
+ - $RS_RWP_WL3_2_Adv
+ - $RS_RWP_WL3_3_Adv
+ - $RS_RWP_WL3_4_Adv
+ - $RS_RWP_WL3_5_Adv
+ - $RS_RWP_WR3_Copy_1_Pair
+ - $RS_RWP_WR3_Copy_1_1
+ - $RS_RWP_WR3_Copy_1_2
+ - $RS_RWP_WR3_Copy_1_3
+ - $RS_RWP_WR3_Copy_1_4
+ - $RS_RWP_WR3_Copy_1_5
+ - $RS_RWP_WR3_Copy_1_1_Adv
+ - $RS_RWP_WR3_Copy_1_2_Adv
+ - $RS_RWP_WR3_Copy_1_3_Adv
+ - $RS_RWP_WR3_Copy_1_4_Adv
+ - $RS_RWP_WR3_Copy_1_5_Adv
+ - $RS_RWP_WL4_Pair
+ - $RS_RWP_WL4_1
+ - $RS_RWP_WL4_2
+ - $RS_RWP_WL4_3
+ - $RS_RWP_WL4_4
+ - $RS_RWP_WL4_5
+ - $RS_RWP_WL4_1_Adv
+ - $RS_RWP_WL4_2_Adv
+ - $RS_RWP_WL4_3_Adv
+ - $RS_RWP_WL4_4_Adv
+ - $RS_RWP_WL4_5_Adv
+
+*********************************************************
+
+
+Body requirements:
+==================
+   ./.
+
+Marker requirements:
+=====================
+   1. Type                 = 98
+       Name                 = $M_Rail_Track_Frame_of_wheelset4
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   2. Type                 = 98
+       Name                 = $M_Rail_Track_Camera_of_wheelset4
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   3. Type                 = 98
+       Name                 = $M_Rail_Track_Frame_of_wheelset3
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   4. Type                 = 98
+       Name                 = $M_Rail_Track_Camera_of_wheelset3
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   5. Type                 = 98
+       Name                 = $M_Rail_Track_Frame_of_wheelset2
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   6. Type                 = 98
+       Name                 = $M_Rail_Track_Camera_of_wheelset2
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   7. Type                 = 98
+       Name                 = $M_Rail_Track_Camera_of_wheelset1
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   8. Type                 = 98
+       Name                 = $M_Rail_Track_Frame_of_wheelset1
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   9. Type                 = 98
+       Name                 = $M_Isys_TrackFrame_RWP_WR1
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   10. Type                 = 78
+       Name                 = $M_B_Isys_ProfRef_RWP_WR1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   11. Type                 = 98
+       Name                 = $M_Isys_TrackFrame_RWP_WL1
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   12. Type                 = 78
+       Name                 = $M_B_Isys_ProfRef_RWP_WL1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   13. Type                 = 98
+       Name                 = $M_Isys_TrackFrame_RWP_WR2
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   14. Type                 = 78
+       Name                 = $M_B_Isys_ProfRef_RWP_WR2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   15. Type                 = 98
+       Name                 = $M_Isys_TrackFrame_RWP_WL2
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   16. Type                 = 78
+       Name                 = $M_B_Isys_ProfRef_RWP_WL2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   17. Type                 = 98
+       Name                 = $M_Isys_TrackFrame_RWP_WR3
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   18. Type                 = 78
+       Name                 = $M_B_Isys_ProfRef_RWP_WR3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   19. Type                 = 98
+       Name                 = $M_Isys_TrackFrame_RWP_WL3
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   20. Type                 = 78
+       Name                 = $M_B_Isys_ProfRef_RWP_WL3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   21. Type                 = 98
+       Name                 = $M_Isys_TrackFrame_RWP_WR3_Copy_1
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   22. Type                 = 78
+       Name                 = $M_B_Isys_ProfRef_RWP_WR3_Copy_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   23. Type                 = 98
+       Name                 = $M_Isys_TrackFrame_RWP_WL4
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   24. Type                 = 78
+       Name                 = $M_B_Isys_ProfRef_RWP_WL4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   25. Type                 = 98
+       Name                 = $M_Isys_load_Fu
+       Mandatory features   = autoplus_gui
+       Alternative feature  =  wheelrail_gui
+   -------------------------------------------------------------
+   26. Type                 = 78
+       Name                 = $M_B_wheelset4_ProfRef_RWP_WR3_Copy_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   27. Type                 = 78
+       Name                 = $M_B_wheelset4_ProfRef_RWP_WL4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   28. Type                 = 78
+       Name                 = $M_B_wheelset3_ProfRef_RWP_WR3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   29. Type                 = 78
+       Name                 = $M_B_wheelset3_ProfRef_RWP_WL3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   30. Type                 = 78
+       Name                 = $M_B_wheelset2_ProfRef_RWP_WR2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   31. Type                 = 78
+       Name                 = $M_B_wheelset2_ProfRef_RWP_WL2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   32. Type                 = 78
+       Name                 = $M_B_wheelset1_ProfRef_RWP_WR1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   33. Type                 = 78
+       Name                 = $M_B_wheelset1_ProfRef_RWP_WL1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+
+Joint requirements:
+===================
+   1. Type                 = 7
+      Name                 = $J_wheelset4
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   2. Type                 = 7
+      Name                 = $J_wheelset3
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   3. Type                 = 7
+      Name                 = $J_Bogie2
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   4. Type                 = 7
+      Name                 = $J_wheelset2
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   5. Type                 = 7
+      Name                 = $J_Bogie
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   6. Type                 = 7
+      Name                 = $J_wheelset1
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   7. Type                 = 7
+      Name                 = $J_Carbody
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+
+Force requirements:
+===================
+   1. Type                 = 78
+      Name                 = $F_RWContact_RWP_WR1
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   2. Type                 = 78
+      Name                 = $F_RWContact_RWP_WL1
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   3. Type                 = 78
+      Name                 = $F_RWContact_RWP_WR2
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   4. Type                 = 78
+      Name                 = $F_RWContact_RWP_WL2
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   5. Type                 = 78
+      Name                 = $F_RWContact_RWP_WR3
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   6. Type                 = 78
+      Name                 = $F_RWContact_RWP_WL3
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   7. Type                 = 78
+      Name                 = $F_RWContact_RWP_WR3_Copy_1
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   8. Type                 = 78
+      Name                 = $F_RWContact_RWP_WL4
+      Mandatory features   = wheelrail_gui
+      Alternative feature  = -
+   -------------------------------------------------------------
+   9. Type                 = 167
+      Name                 = $C_accelerometer
+      Mandatory features   = control_gui
+      Alternative feature  =  autoplus_gui wheelrail_gui
+   -------------------------------------------------------------
+
+Constraint requirements:
+=========================
+   ./.
+
+Result requirements:
+=========================
+   1. Type                 = 78
+       Name                 = $RS_RWP_WR1_Pair
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   2. Type                 = 79
+       Name                 = $RS_RWP_WR1_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   3. Type                 = 79
+       Name                 = $RS_RWP_WR1_2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   4. Type                 = 79
+       Name                 = $RS_RWP_WR1_3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   5. Type                 = 79
+       Name                 = $RS_RWP_WR1_4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   6. Type                 = 79
+       Name                 = $RS_RWP_WR1_5
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   7. Type                 = 80
+       Name                 = $RS_RWP_WR1_1_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   8. Type                 = 80
+       Name                 = $RS_RWP_WR1_2_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   9. Type                 = 80
+       Name                 = $RS_RWP_WR1_3_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   10. Type                 = 80
+       Name                 = $RS_RWP_WR1_4_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   11. Type                 = 80
+       Name                 = $RS_RWP_WR1_5_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   12. Type                 = 78
+       Name                 = $RS_RWP_WL1_Pair
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   13. Type                 = 79
+       Name                 = $RS_RWP_WL1_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   14. Type                 = 79
+       Name                 = $RS_RWP_WL1_2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   15. Type                 = 79
+       Name                 = $RS_RWP_WL1_3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   16. Type                 = 79
+       Name                 = $RS_RWP_WL1_4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   17. Type                 = 79
+       Name                 = $RS_RWP_WL1_5
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   18. Type                 = 80
+       Name                 = $RS_RWP_WL1_1_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   19. Type                 = 80
+       Name                 = $RS_RWP_WL1_2_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   20. Type                 = 80
+       Name                 = $RS_RWP_WL1_3_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   21. Type                 = 80
+       Name                 = $RS_RWP_WL1_4_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   22. Type                 = 80
+       Name                 = $RS_RWP_WL1_5_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   23. Type                 = 78
+       Name                 = $RS_RWP_WR2_Pair
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   24. Type                 = 79
+       Name                 = $RS_RWP_WR2_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   25. Type                 = 79
+       Name                 = $RS_RWP_WR2_2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   26. Type                 = 79
+       Name                 = $RS_RWP_WR2_3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   27. Type                 = 79
+       Name                 = $RS_RWP_WR2_4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   28. Type                 = 79
+       Name                 = $RS_RWP_WR2_5
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   29. Type                 = 80
+       Name                 = $RS_RWP_WR2_1_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   30. Type                 = 80
+       Name                 = $RS_RWP_WR2_2_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   31. Type                 = 80
+       Name                 = $RS_RWP_WR2_3_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   32. Type                 = 80
+       Name                 = $RS_RWP_WR2_4_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   33. Type                 = 80
+       Name                 = $RS_RWP_WR2_5_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   34. Type                 = 78
+       Name                 = $RS_RWP_WL2_Pair
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   35. Type                 = 79
+       Name                 = $RS_RWP_WL2_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   36. Type                 = 79
+       Name                 = $RS_RWP_WL2_2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   37. Type                 = 79
+       Name                 = $RS_RWP_WL2_3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   38. Type                 = 79
+       Name                 = $RS_RWP_WL2_4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   39. Type                 = 79
+       Name                 = $RS_RWP_WL2_5
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   40. Type                 = 80
+       Name                 = $RS_RWP_WL2_1_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   41. Type                 = 80
+       Name                 = $RS_RWP_WL2_2_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   42. Type                 = 80
+       Name                 = $RS_RWP_WL2_3_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   43. Type                 = 80
+       Name                 = $RS_RWP_WL2_4_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   44. Type                 = 80
+       Name                 = $RS_RWP_WL2_5_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   45. Type                 = 78
+       Name                 = $RS_RWP_WR3_Pair
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   46. Type                 = 79
+       Name                 = $RS_RWP_WR3_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   47. Type                 = 79
+       Name                 = $RS_RWP_WR3_2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   48. Type                 = 79
+       Name                 = $RS_RWP_WR3_3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   49. Type                 = 79
+       Name                 = $RS_RWP_WR3_4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   50. Type                 = 79
+       Name                 = $RS_RWP_WR3_5
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   51. Type                 = 80
+       Name                 = $RS_RWP_WR3_1_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   52. Type                 = 80
+       Name                 = $RS_RWP_WR3_2_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   53. Type                 = 80
+       Name                 = $RS_RWP_WR3_3_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   54. Type                 = 80
+       Name                 = $RS_RWP_WR3_4_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   55. Type                 = 80
+       Name                 = $RS_RWP_WR3_5_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   56. Type                 = 78
+       Name                 = $RS_RWP_WL3_Pair
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   57. Type                 = 79
+       Name                 = $RS_RWP_WL3_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   58. Type                 = 79
+       Name                 = $RS_RWP_WL3_2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   59. Type                 = 79
+       Name                 = $RS_RWP_WL3_3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   60. Type                 = 79
+       Name                 = $RS_RWP_WL3_4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   61. Type                 = 79
+       Name                 = $RS_RWP_WL3_5
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   62. Type                 = 80
+       Name                 = $RS_RWP_WL3_1_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   63. Type                 = 80
+       Name                 = $RS_RWP_WL3_2_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   64. Type                 = 80
+       Name                 = $RS_RWP_WL3_3_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   65. Type                 = 80
+       Name                 = $RS_RWP_WL3_4_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   66. Type                 = 80
+       Name                 = $RS_RWP_WL3_5_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   67. Type                 = 78
+       Name                 = $RS_RWP_WR3_Copy_1_Pair
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   68. Type                 = 79
+       Name                 = $RS_RWP_WR3_Copy_1_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   69. Type                 = 79
+       Name                 = $RS_RWP_WR3_Copy_1_2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   70. Type                 = 79
+       Name                 = $RS_RWP_WR3_Copy_1_3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   71. Type                 = 79
+       Name                 = $RS_RWP_WR3_Copy_1_4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   72. Type                 = 79
+       Name                 = $RS_RWP_WR3_Copy_1_5
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   73. Type                 = 80
+       Name                 = $RS_RWP_WR3_Copy_1_1_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   74. Type                 = 80
+       Name                 = $RS_RWP_WR3_Copy_1_2_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   75. Type                 = 80
+       Name                 = $RS_RWP_WR3_Copy_1_3_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   76. Type                 = 80
+       Name                 = $RS_RWP_WR3_Copy_1_4_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   77. Type                 = 80
+       Name                 = $RS_RWP_WR3_Copy_1_5_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   78. Type                 = 78
+       Name                 = $RS_RWP_WL4_Pair
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   79. Type                 = 79
+       Name                 = $RS_RWP_WL4_1
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   80. Type                 = 79
+       Name                 = $RS_RWP_WL4_2
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   81. Type                 = 79
+       Name                 = $RS_RWP_WL4_3
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   82. Type                 = 79
+       Name                 = $RS_RWP_WL4_4
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   83. Type                 = 79
+       Name                 = $RS_RWP_WL4_5
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   84. Type                 = 80
+       Name                 = $RS_RWP_WL4_1_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   85. Type                 = 80
+       Name                 = $RS_RWP_WL4_2_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   86. Type                 = 80
+       Name                 = $RS_RWP_WL4_3_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   87. Type                 = 80
+       Name                 = $RS_RWP_WL4_4_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+   88. Type                 = 80
+       Name                 = $RS_RWP_WL4_5_Adv
+       Mandatory features   = wheelrail_gui
+       Alternative feature  = -
+   -------------------------------------------------------------
+
+Filter requirements:
+====================
+   ./.
+
+Primitive requirements:
+====================
+   ./.
